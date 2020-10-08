@@ -1,12 +1,15 @@
 header {
-    height: 200px;
+    height: 100px;
     background-color: #333333;
-    font-weight: 300;
+    font-weight: bold;
+    color: snow;
     font-size: 25px;
+    padding-top: 25px;
     text-align: center;
 }
 
 #searchDiv {
+    margin-right: 5px;
     height: 700px;
     width : 400px;
     background-color: #e6e6e6;
@@ -14,13 +17,19 @@ header {
 
 .searchTitle {
     width: 100px;
-    height: 50px;
     color: black;
 }
 
 #displayDiv {
     height: 500px;
-    width: 450px;
+    width: 100%;
     float: right;
     background-color:   slateblue;
+}
+
+.searchBtn {
+    color:black;
+    background-color: chocolate;
+    font-weight: bold;
+    padding: 2px;
 }
