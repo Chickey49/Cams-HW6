@@ -21,7 +21,7 @@ header {
 }
 
 #displayDiv {
-    height: 500px;
+    height: 650px;
     width: 100%;
     float: right;
     background-color:   slateblue;
@@ -32,4 +32,12 @@ header {
     background-color: chocolate;
     font-weight: bold;
     padding: 2px;
+}
+#list {
+    width: 100%;
+}
+.cityItem{
+    border-bottom-style: dashed;
+    border-bottom-width: 2px;
+    margin-bottom: 5px;
 }

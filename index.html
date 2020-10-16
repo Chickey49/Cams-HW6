@@ -8,7 +8,7 @@
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     
-    <title>Document</title>
+    <title>Weather</title>
 </head>
 
 <body>
@@ -17,40 +17,24 @@
         <div id="searchDiv">
             <div id="searchForm">
                 <div class="input-group flex-nowrap">
-                    <input type="text" class="form-control" placeholder="Search for a City" aria-label="Username"
+                    <input type="text" id="searchBox" class="form-control" placeholder="Search for a City" aria-label="Username"
                         aria-describedby="addon-wrapping">
                     <div class="input-group-append btn searchBtn">Search</div>
                 </div>
-                <!--                   
-                <span class="searchTitle">
-                    Search for a City:
-                </span> -->
             </div>
             <div id="searchResults">
-                <div class="card">
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item">Cras justo odio</li>
-                        <li class="list-group-item">Dapibus ac facilisis in</li>
-                        <li class="list-group-item">Vestibulum at eros</li>
+                <div id="list" class="card">
+                    <ul id="cityList" class="list-group list-group-flush">
                     </ul>
                 </div>
             </div>
         </div>
         <div id="displayDiv">
             <div class="jumbotron jumbotron-fluid">
-                <div class="container">
-                    <h1 class="display-4">Fluid jumbotron</h1>
-                    <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its
-                        parent.</p>
+                <div class="container" id="displayContainer">
                 </div>
             </div>
-            <div id="forecastDiv">
-                <div class="card">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                    </div>
-                </div>
+            <div id="forecastDiv" class="card-group">
             </div>
         </div>
 
