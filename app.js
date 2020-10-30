@@ -69,7 +69,7 @@ function showCity(responseData) {
     display.append($("<h2>").text("Temperature" + "=" + (Math.round((responseData.main.temp - 273.15) * 1.8 + 32))));
     display.append($("<h2>").text("Humidity" + "=" + responseData.main.humidity));
     display.append($("<h2>").text("Wind" + "=" + responseData.wind.deg + String.fromCharCode(176) + " @ " + responseData.wind.speed + " Gusting " + responseData.wind.gust));
-    display.prepend($("<img>").attr("src", `http://openweathermap.org/img/w/${weatherIcon}.png`));
+    display.prepend($("<img>").attr("src", `https://openweathermap.org/img/w/${weatherIcon}.png`));
 
     var UV = $("<h2>");
     forecastAPI(responseData.coord);
@@ -84,7 +84,7 @@ function showForecast(data) {
         var hum  = $("<p>").text("Humidity" + "=" + data.daily[i].humidity);
         
         var weatherIcon = data.daily[i].weather[0].icon;
-        var icon = $("<img>").attr("src",`http://openweathermap.org/img/w/${weatherIcon}.png`);
+        var icon = $("<img>").attr("src",`https://openweathermap.org/img/w/${weatherIcon}.png`);
 
 
         var card = $("<div>").attr("class", "card");
@@ -119,7 +119,7 @@ function callAPI(city) {
 
 
     const APIkey = "55d64fc582cb0ffa7945ed98f95ee6c7";
-    let endPoint = `http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${APIkey}`
+    let endPoint = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${APIkey}`
     console.log(endPoint)
 
     console.log("making calls!")
